@@ -1,16 +1,14 @@
 package pyramid.calculations;
 
-import utils.Utility;
-
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedList;
 import java.util.List;
 
-import static pyramid.calculations.NodeElementInPyramid.EvenOrOdd;
+
+
 
 public class MaximumSumFinder {
 
@@ -58,6 +56,7 @@ public class MaximumSumFinder {
             });
         }
         NodeElementInPyramid nodeElementInPyramid = nodeElementInPyramidList.stream().findFirst().get();
+        System.out.print(node.getSum()+" ");
         return new NodeElementInPyramid(node.getSum()+nodeElementInPyramid.getSum(),nodeElementInPyramid.getLastIndexInPyramid(),nodeElementInPyramid.getIsEvenOrOdd());
         //return nodeElementInPyramidList.stream().findFirst().get();
     }

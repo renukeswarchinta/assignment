@@ -10,6 +10,7 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThat;
 
 import org.junit.rules.ExpectedException;
+import solution2.FindSumValueInPyramid;
 import utils.Utility;
 
 import java.io.IOException;
@@ -22,12 +23,15 @@ import static utils.Utility.isNumberic;
 public class MaximumSumFinderTest {
 
     private MaximumSumFinder maximumSumFinder;
+
     @Rule
     public ExpectedException exceptionRule = ExpectedException.none();
 
     @Before
     public void setUp() throws Exception {
         maximumSumFinder = new MaximumSumFinder();
+
+
     }
 
     @Test
