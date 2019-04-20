@@ -44,7 +44,7 @@ public class MaximumSumFinderTest {
     public void calculateMaximumSumDiagnally_ForAssignmentInput() throws URISyntaxException, IOException {
         Path path = Paths.get(getClass().getClassLoader().getResource("assignmentInput.txt").toURI());
         long sum = maximumSumFinder.calculateMaximumSumDiagnally(path);
-        assertThat(sum,equalTo(8186L));
+        assertThat(sum,equalTo(4006L));
     }
     @Test
     public void calculateMaximumSumDiagnally_CountMismatchInput() throws URISyntaxException, IOException {
