@@ -10,15 +10,15 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThat;
 
 import org.junit.rules.ExpectedException;
-import solution2.FindSumValueInPyramid;
-import utils.Utility;
+
+
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static utils.Utility.isNumberic;
+
 
 public class MaximumSumFinderTest {
 
@@ -38,7 +38,7 @@ public class MaximumSumFinderTest {
     public void calculateMaximumSumDiagnally() throws URISyntaxException, IOException {
         Path path = Paths.get(getClass().getClassLoader().getResource("input.txt").toURI());
         long sum = maximumSumFinder.calculateMaximumSumDiagnally(path);
-        assertThat(sum,equalTo(16L));
+        assertThat(sum,equalTo(23L));
     }
     @Test
     public void calculateMaximumSumDiagnally_ForAssignmentInput() throws URISyntaxException, IOException {

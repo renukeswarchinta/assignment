@@ -29,7 +29,7 @@ public class FindSumValueInPyramidTest {
     public void calculateMaximumSumDiagnally() throws URISyntaxException, IOException {
         Path path = Paths.get(getClass().getClassLoader().getResource("input.txt").toURI());
         long sum = findSumValueInPyramid.calculateMaximumSumDiagnally(path);
-        assertThat(sum,equalTo(16L));
+        assertThat(sum,equalTo(23L));
     }
     @Test
     public void calculateMaximumSumDiagnally_ForAssignmentInput() throws URISyntaxException, IOException {
