@@ -3,7 +3,7 @@ package interviewQuestions;
 public class StackImplementation {
 
 	public static void main(String[] args) {
-		Stack stack = new Stack(10);
+		CustomStack stack = new CustomStack(10);
 		stack.push(1);stack.push(10);stack.push(2);
 		
 		System.out.println(stack.pop());
@@ -13,11 +13,11 @@ public class StackImplementation {
 }
 
 
-class Stack{
+class CustomStack{
 	int array[];
 	int top;
 	int capacity ;
-	Stack(int size){
+	CustomStack(int size){
 		array = new int[size];
 		top = -1;
 		capacity = size;
