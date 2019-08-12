@@ -17,6 +17,15 @@ public class LinkedListImpl {
 		}
 		return list;
 	}
+	public void isLinkedListCyclic(LinkedListImpl list){
+		Node next = list.head;
+		while(next.next == null) {
+			next = next.next;
+		}
+		if(next == head) {
+			System.out.println("it is cyclic");
+		}
+	}
 	
 }
 
