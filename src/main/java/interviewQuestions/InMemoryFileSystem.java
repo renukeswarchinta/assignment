@@ -19,6 +19,9 @@ public class InMemoryFileSystem {
 		fileSystem.makeDirectory("NewFolder");
 		 
 	}
+	public static void printJob(String s) {
+		System.out.println(s);
+		}
 }
 
 class FileSystem {
